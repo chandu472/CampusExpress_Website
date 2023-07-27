@@ -1,0 +1,94 @@
+.clients-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: white;
+}
+
+.clients-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: darkorange;
+}
+
+.clients-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.client:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.client img {
+  width: 100%;
+  max-width: 180px; /* Increase the logo size for mobile screens */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.client::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.slick-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .clients-section h2 {
+    font-size: 50px;
+    margin-bottom: 30px; /* Reduce the bottom margin */
+    
+  }
+
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px; /* Increase the gap between logos */
+    margin-right: 200px;
+  }
+
+  .client:not(:last-child) {
+    margin-bottom: 60px; /* Increase the gap between logos */
+    margin-right: 200px;
+  }
+
+  .client img {
+    width: 350px; /* Increase the max-width to make the logos larger */
+    height: 170px; 
+    margin-bottom: 30px; /* Increase the gap between the image and the next logo */
+    padding: 15px;
+    margin-right: 200px;
+  }
+
+  .logo-container {
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height: 100px;
+    position: relative;
+    margin: 0 80px; /* Add horizontal margin to create space between logos */
+    margin-right: 200px;
+  }
+}

@@ -1,0 +1,110 @@
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+  max-height: 300px;
+}
+
+.container {
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: -10px;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  height: 50px;
+  width: 100%; /* Change "auto" to "100%" to extend the width */
+  color: #ffffff;
+  
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-wrap: nowrap;
+  }
+
+  .footer-section {
+    width: auto;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    background: linear-gradient(to right, black 75%, white 70%);
+  }
+  
+  .footer-content {
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: -10px;
+    padding: 0 20px; /* Add this line to add horizontal padding */
+  }
+
+  .footer-heading {
+    margin-top: 20px;
+  }
+  .container {
+    height: fit-content;
+    margin: 0 auto;
+    width: 108.25%;
+    margin-top: -30px;
+    min-width: 100px;
+    margin-left: -12px;
+    padding: 0 20px;
+    background-color: darkorange; /* Add this line to set the background color to black */
+  }
+}
